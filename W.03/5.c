@@ -7,8 +7,8 @@ long fibonacci(int n)
   else return 0 ;
 }
 int main()
-{
-    int num = 0 ;
+{                                       //this code don't run in large number because time of recursion !!
+    int num = 0 ;                       //can use prefix array to calculate fibonacci with less time .
     printf("Enter the number : ");
     scanf("%d",&num);
     long result = fibonacci(num);
