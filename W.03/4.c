@@ -12,12 +12,14 @@ void login()
      fgets(email,28,stdin);
      if(strcmp(email,Email)) printf("\nyour email not found in MILLS , please create new account\n");
     else {printf("Password :  ");
-label : scanf("%d",&pass);
+     do
+     {
+     scanf("%d",&pass);
     if(pass != password){printf("Wrong password try again : ");
-    goto label;}
-    else {
-        printf("\nHello in MILLS page , changing your future starts here :)\n");
     }
+    }while(pass!=password);
+        printf("\nHello in MILLS page , changing your future starts here :)\n");
+
     }
 }
 int main()
